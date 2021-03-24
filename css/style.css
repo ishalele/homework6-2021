@@ -36,9 +36,9 @@ header{
     /*Don't forget to vertically and horizontally 
     align the element*/
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 /*Requirement 5*/
@@ -79,7 +79,7 @@ div.package header{
 /**  UNCOMMENT THIS CODE ONCE YOU
 /**  HAVE THE SELECTOR
 */
-.gallery image{
+.gallery > img{
   border: 10px #50C7C7 solid;
   margin: 10px;
   width: 300px;
@@ -91,19 +91,18 @@ div.package header{
    /*Your code here.*/
    animation: logo_grow 15s 1;
 
- 
 }
 
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
   from {
-    width: 25px;
     opacity: 0;
+    width: 25px;
   }
   to {
-    width: 420 px;
     opacity: 1;
+    width: 420 px;
   }
 
 }
@@ -111,12 +110,12 @@ div.package header{
 @keyframes logo_grow{
   /*Your code here.*/
   from {
-    width: 25px;
     opacity: 0;
+    width: 25px;
   }
   to {
-    width: 420 px;
     opacity: 1;
+    width: 420 px;
   }
 
 } 
